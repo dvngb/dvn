@@ -1,0 +1,22 @@
+print("☎ :: Welcome to KITT. ::")
+a = input("Please enter your username. ")
+print("☎ :: Running logon credentials for '" + a + "'... ::")
+print("☎ :: Waiting...")
+print("☎ :: Waiting...")
+print("☎ :: Waiting...")
+print("☎ :: Access GRANTED. Welcome, " + a + ". ::")
+print("☎ :: Your personal details are out-of-date, and need to be updated. ::")
+b = input("☎ :: How old are you? :: ")
+print("☎ :: " + b + " - Confirmed. Re-added to database.")
+c = input("☎ :: Who is your favourite musician? :: ")
+print("☎ :: " + c + ". " + "Favourite musician added to database.")
+d = input("☎ :: Please enter an alternative musician or band. :: ")
+print("☎ :: " + d + ". Confirmed. " + d + " added to " + c + ".")
+e = input("☎ :: As part of my software improvement upgrade, KITT would like to tell a joke. Yes/No? :: ")
+if e == "Yes":
+    print("☎ :: How do robots eat salsa? With micro-chips! Ha-ha-ha! :: ")
+if e == "No":
+    print("☎ :: Acknowledged. :: ")
+
+print("☎ :: Logging off... :: ")
+print("☎ :: Thank you for using KITT, " + a + ". ::")
