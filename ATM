@@ -1,0 +1,68 @@
+import time
+
+balance = 2400
+
+def sub5(num1,num2):
+    return(num1-num2)
+print(sub(90,70))
+
+def login():
+    print(":: Please enter your PIN. ::")
+    pw = input()
+    if pw == "1324":
+        menu()
+    else: print(":: Incorrect PIN. Please try again. ::")
+    login()
+
+
+def menu():
+    print("----- :: Please select a service. :: -----")
+    time.sleep(0.5)
+    print("::      Balance ::")
+    time.sleep(0.5)
+    print("::      Deposit ::")
+    time.sleep(0.5)
+    print("::      Withdraw ::")
+    time.sleep(0.5)
+    print("::      Exit ::")
+    option = input("")
+
+    if option == "Balance":
+        print("£", balance)
+        menu()
+    if option == "Withdraw":
+        withdraw()
+
+def withdraw():
+    
+    time.sleep(0.5)
+    print("     £5")
+    time.sleep(0.5)
+    print("     £10")
+    time.sleep(0.5)
+    print("     £20")
+    time.sleep(0.5)
+    print("     £50")
+    time.sleep(0.5)
+    print("     £100")
+    withreq = input("£")
+
+    if withreq is "5":
+        balance - 5
+
+    if withreq is "10":
+        balance - 10
+
+    if withreq is "20":
+        balance - 20
+
+    if withreq is "50":
+        balance - 50
+
+    if withreq is "100":
+        min = float(balance) - float(100)
+
+    print(":: New Balance:", balance, "::")
+    menu()
+
+login()
