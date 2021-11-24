@@ -1,0 +1,17 @@
+import os
+from pathlib import Path 
+import random
+
+
+list_of_extensions = ['rst','.txt','.md','.docx','html']
+
+os.chdir('./RandomFiles')
+
+for item in list_of_extensions:
+
+for num in range(20):
+file_name = random.randint(1,50)
+file_to_create = str(file_name) + item
+Path(file_to_create).touch()
+
+files_to_group = []
