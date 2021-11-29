@@ -1,0 +1,63 @@
+import time
+
+
+def login():
+    print("᚜ Welcome to ProManager. ᚛")
+    time.sleep(0.8)
+    print("᚜ Logging you in... ᚛")
+    time.sleep(1)
+    menu()
+
+def menu():
+    print("᚜ Please select an option. ᚛")
+    print("᚜ ᚜ New Project (1) ᚛ ᚛")
+    time.sleep(0.5)
+    print("᚜ ᚜ View Projects (2) ᚛ ᚛")
+    time.sleep(0.5)
+    print("᚜ ᚜ Help (3) ᚛ ᚛")
+    time.sleep(0.5)
+    print("᚜ ᚜ Exit (4) ᚛ ᚛")
+    option = input("")
+
+    if option == "1":
+        newproj()
+    if option == "2":
+        viewproj()
+    if option == "3":
+        viewhelp()
+    if option == "4":
+        quit()
+
+
+def newproj():
+    print("᚜ Which suite is this for? ᚛")
+    time.sleep(0.2)
+    print("᚜ Website (1) ᚛")
+    time.sleep(0.2)
+    print("᚜ Mobile App (2) ᚛")
+    time.sleep(0.2)
+    print("᚜ Game (3) ᚛")
+    option2 = input("")
+
+    if option2 == "1":
+        finalentry()
+    if option2 == "2":
+        finalentry()
+    if option2 == "3":
+        gameentry()
+
+def webentry():
+    print("᚜ Please enter the following data separated by commas; ᚛")
+    print("ProjectName,Deadline,ClientName,Price")
+    datain = input()
+
+def mobentry():
+    print("᚜ Please enter the following data separated by commas; ᚛")
+    print("ProjectName,Deadline,ClientName,Price")
+    webentry1 = input()
+
+def webentry():
+    print("᚜ Please enter the following data separated by commas; ᚛")
+    print("ProjectName,Deadline,ClientName,Price")
+    webentry1 = input()
+login()
