@@ -1,5 +1,25 @@
 import time
 
+def addproduct():
+    print(":: Please adhere to the below format with correct information. ::")
+    print("PRODUCT ID - PRODUCT NAME - DEPARTMENT - LOC. - QUAN. - PRICE EXVAT - PRICE INCVAT")
+    stockinput = input("")
+    f = open("arkwrightstock.txt", "a")
+    f.write("\n")
+    f.write("\n")
+    f.write(stockinput)
+    print(":: Product successfully added. ::")
+    addsecond = input(":: Would you like to add another product? Y/N ::")
+    if addsecond == ("Y"):
+        addproduct()
+    else:
+        menu()
+
+
+def readproducts():
+    f = open("arkwrightstock.txt", "r")
+    for x in f:
+        print(x)
 
 def login():
     print(":: Please enter your password. ::")
@@ -24,12 +44,10 @@ def menu():
     option = input("")
 
     if option == "2":
-        f = open("arkwrightstock.txt", "r")
-        for x in f:
-            print(x)
+       readproducts()
 
     if option == "3":
-        print(":: Please adhere to the below format with correct information. ::")
+        addproduct()
 
     if option == "4":
         time.sleep(1)
