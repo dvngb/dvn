@@ -1,0 +1,40 @@
+import time
+
+
+def login():
+    print(":: Please enter your password. ::")
+    pw = input()
+    if pw == "1324":
+        menu()
+    else:
+        print(":: Welcome to Arkwright's Stock System. ::")
+    menu()
+
+
+def menu():
+    print("----- :: Please select a service. :: -----")
+    time.sleep(0.5)
+    print("::      1 - Search ::")
+    time.sleep(0.5)
+    print("::      2 - Stock List ::")
+    time.sleep(0.5)
+    print("::      3 - Add/Remove Products ::")
+    time.sleep(0.5)
+    print("::      4 - Exit ::")
+    option = input("")
+
+    if option == "2":
+        f = open("arkwrightstock.txt", "r")
+        for x in f:
+            print(x)
+
+    if option == "3":
+        print(":: Please adhere to the below format with correct information. ::")
+
+    if option == "4":
+        time.sleep(1)
+        print(":: Exiting Stock System...")
+        exit()
+
+
+login()
