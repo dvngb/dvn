@@ -1,0 +1,47 @@
+import time
+
+def menu():
+    print("Smart Home System - v0.1\nPlease select a device. ")
+    deviceinput = input("TV\nSpeakers\nCameras\nLights ")
+    if deviceinput == "TV":
+        tv()
+    if deviceinput == "Speakers":
+        speakers()
+    if deviceinput == "Cameras":
+        cameras()
+    if deviceinput == "Lights":
+        lights()
+
+
+def tv():
+    tvcheck == input("TV selected.\nThis device is currently ON.\nThis device can be controlled.")
+    if tvcheck == "Menu":
+        menu()
+
+
+def speakers():
+    print("Speakers selected.\nThis device is currently ON.\nThis device cannot be controlled.")
+    time.sleep(1)
+    print("Returning you to the menu...")
+    time.sleep(1)
+    menu()
+
+
+def cameras():
+    print("Cameras selected.\nThis device is currently ON.\nThis device cannot be controlled.")
+    time.sleep(1)
+    print("Returning you to the menu...")
+    time.sleep(1)
+    menu()
+
+
+def lights():
+    print("Lights selected.\nThis device is currently ON.\nThis device cannot be controlled.")
+    time.sleep(1)
+    print("Returning you to the menu...")
+    time.sleep(1)
+    menu() 
+
+
+
+menu()
