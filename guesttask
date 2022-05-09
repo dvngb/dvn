@@ -1,0 +1,34 @@
+guestlist = ["JEREMY CLARKSON - 9:00AM", "RICHARD HAMMOND - 11:30AM", "JAMES MAY - 8:00PM"]
+carlist = ["J. CLARKSON - NE14ABJ", "R. HAMMOND - AB63 NDK", "J. MAY - FT92 FTA"]
+
+def menu():
+    print("[MAIN MENU]")
+    print("Please pick an option from the list below.")
+    print("1. Guest Arrival\n2. Car Registration\n3. Exit")
+    choice = input("")
+    if choice == ("1"):
+        arrival()
+    if choice == ("2"):
+        registration()
+    if choice == ("3"):
+        exit()
+
+def arrival():
+    print("Please enter the name of the arriving guest and the time, separated by -.")
+    getname = input("").upper()
+    guestlist.append(getname)
+    print("Successful!", getname, "added to arrivals.")
+    print(guestlist)
+    print("Returning to the menu...")
+    menu()
+
+def registration():
+    print("Please enter the holder's first initial and full surname, with their plate number separated by -.")
+    getreg = input("").upper()
+    carlist.append(getreg)
+    print("Successful!", getreg, "added to parking.")
+    print(carlist)
+    print("Returning to the menu...")
+    menu()
+
+menu()
