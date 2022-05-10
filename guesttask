@@ -1,22 +1,27 @@
-guestlist = ["JEREMY CLARKSON - 9:00AM", "RICHARD HAMMOND - 11:30AM", "JAMES MAY - 8:00PM"]
+guestlist = ["JEREMY CLARKSON - 9:00AM", "J.CLARKSON@GMAIL.COM", "RICHARD HAMMOND - 11:30AM", "R.HAMMOND@GMAIL.COM", "JAMES MAY - 8:00PM", "J.MAY@GMAIL.COM"]
 carlist = ["J. CLARKSON - NE14ABJ", "R. HAMMOND - AB63 NDK", "J. MAY - FT92 FTA"]
 
 def menu():
     print("[MAIN MENU]")
     print("Please pick an option from the list below.")
-    print("1. Guest Arrival\n2. Car Registration\n3. Exit")
+    print("1. Guest Arrival\n2. Car Registration\n3. Current Update\n4. Exit")
     choice = input("")
     if choice == ("1"):
         arrival()
     if choice == ("2"):
         registration()
     if choice == ("3"):
+        update()
+    if choice == ("4"):
         exit()
 
 def arrival():
-    print("Please enter the name of the arriving guest and the time, separated by -.")
+    print("Please enter the full name of the arriving guest and the time, separated by -.")
     getname = input("").upper()
     guestlist.append(getname)
+    print("Please enter their email address and phone number.")
+    getdetails = input("").upper()
+    guestlist.append(getdetails)
     print("Successful!", getname, "added to arrivals.")
     print(guestlist)
     print("Returning to the menu...")
@@ -29,6 +34,12 @@ def registration():
     print("Successful!", getreg, "added to parking.")
     print(carlist)
     print("Returning to the menu...")
+    menu()
+
+def update():
+    print("All arrivals and cars currently registered:")
+    print(guestlist)
+    print(carlist)
     menu()
 
 menu()
