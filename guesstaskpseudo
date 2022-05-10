@@ -1,0 +1,44 @@
+guestinfo = ("names")       # lists of pre-existing examples, also holds user information
+carinfo = ("cars")
+
+define menu
+	print ("Menu")
+	print("Please pick an option - 1. Guest Arrival, 2. Car Registration, 3. Current Update, 4. Exit")
+	menuchoice = input("")      #empty input for easier typing
+	if choice = 1
+		arrival()
+	if choice = 2
+		registration()
+	if choice = 3
+		update()     # this function lists all current guests and all cars currently registered w/ info
+	if choice = 4
+		exit()
+	
+	
+define arrival()
+	getname = raw_input("Please enter the full name of arriving guest and time.").upper    # .upper used for continuity
+	append GUESTINFO with GETNAME
+	print("Please enter email and phone number.")
+	getdetails = raw_input("").upper
+	append GUESTINFO with GETDETAILS
+	print("Success!", getname, "added.")
+	print guestinfo          #assurances that it's correct
+	menu()
+
+define registration()
+    print("Please enter the holder's first initial and full surname, with their plate number separated by -.")
+    getreg = input("").upper()
+    carlist.append(getreg)
+    print("Successful!", getreg, "added to parking.")
+    print(carlist)
+    print("Returning to the menu...")
+    menu()
+
+define update()
+    print("All arrivals and cars currently registered:")     # prints all current strings in list container then returns to menu
+    print(guestlist)
+    print(carlist)
+    menu()
+
+
+menu()
