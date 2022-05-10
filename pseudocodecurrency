@@ -1,0 +1,185 @@
+
+|   REPETITIVE CLASSES
+|
+|
+|def gbpeur():
+|	print("How many POUNDS do you wish to convert to EUROS?")
+|	poundtoeuro = input("")
+|	print("You wish to convert", poundtoeuro, "POUNDS into EUROS. Is this correct?")       #ensure correct
+|	print("Y/N")
+|	input("").upper()
+|	if option = ("Y")
+|		continue
+|			
+|	if option = ("N")
+|		gbpeur()         #allows user to re-enter their number
+|			
+|	else:
+|		print("Incorrect option. Please try again.")
+|		gbpeur()
+|
+|	print("Converting...")
+|	output = poundtoeuro * 0.856192
+|	print("From ", poundtoeuro, "POUNDS, you would get ", output, " EUROS.")
+|	print("Returning to menu.")
+|		menu()
+|
+|
+|
+|def eurgbp():
+|	print("How many EUROS do you wish to convert to POUNDS?")
+|	eurotopound = input("")
+|	print("You wish to convert", eurotopound, "EUROS into POUNDS. Is this correct?")       #ensure correct
+|	print("Y/N")
+|	input("").upper()
+|	if option = ("Y")
+|		continue
+|			
+|	if option = ("N")
+|		eurgbp()         #allows user to re-enter their number
+|			
+|	else:
+|		print("Incorrect option. Please try again.")
+|		eurgbp()
+|
+|	print("Converting...")
+|	output = eurotopound * 0.856192
+|	print("From ", eurotopound, "EUROS, you would get ", output, " POUNDS.")
+|	print("Returning to menu.")
+|		menu()
+|
+|
+|
+|def gbpaud():
+|	print("How many POUNDS do you wish to convert to AUSTRALIAN DOLLARS?")
+|	poundtoeuro = input("")
+|	print("You wish to convert", poundtodollar, "POUNDS into AUSTRALIAN DOLLARS. Is this correct?")       #ensure correct
+|	print("Y/N")
+|	input("").upper()
+|	if option = ("Y")
+|		continue
+|			
+|	if option = ("N")
+|		gbpaud()         #allows user to re-enter their number			
+|	else:
+|		print("Incorrect option. Please try again.")
+|		gbpaud()
+|
+|	print("Converting...")
+|	output = poundtodollar * 1.793263
+|	print("From ", poundtodollar, "POUNDS, you would get ", output, " AUSTRALIAN DOLLARS..")
+|	print("Returning to menu.")
+|		menu()
+|
+|
+|
+|def audgbp():
+|	print("How many AUSTRALIAN DOLLARS do you wish to convert to POUNDS?")
+|	dollartopound = input("")
+|	print("You wish to convert", dollartopound, "AUSTRALIAN DOLLARS into POUNDS. Is this correct?")       #ensure correct
+|	print("Y/N")
+|	input("").upper()
+|	if option = ("Y")
+|		continue
+|			
+|	if option = ("N")
+|		audgbp()         #allows user to re-enter their number
+|			
+|	else:
+|		print("Incorrect option. Please try again.")
+|		audgbp()
+|
+|	print("Converting...")
+|	output = dollartopound * 0.557643
+|	print("From ", dollartopound, "AUSTRALIAN DOLLARS, you would get ", output, " POUNDS.")
+|	print("Returning to menu.")
+|		menu()
+|
+|
+|
+|def gbpyen():
+|	print("How many POUNDS do you wish to convert to JAPANESE YEN?")
+|	poundtoyen = input("")
+|	print("You wish to convert", poundtoyen, "POUNDS into JAPANESE YEN. Is this correct?")       #ensure correct
+|	print("Y/N")
+|	input("").upper()
+|	if option = ("Y")
+|		continue
+|			
+|	if option = ("N")
+|		gbpyen()         #allows user to re-enter their number
+|			
+|	else:
+|		print("Incorrect option. Please try again.")
+|		gbpyen()
+|
+|	print("Converting...")
+|	output = poundtoyen * 151.443794
+|	print("From ", poundtoyen, "POUNDS, you would get ", output, " JAPANESE YEN.")
+|	print("Returning to menu.")
+|		menu()
+|
+|
+|
+|def yengbp():
+|	print("How many JAPANESE YEN do you wish to convert to POUNDS?")
+|	yentopound = input("")
+|	print("You wish to convert", yentopound, "JAPANESE YEN into POUNDS. Is this correct?")       #ensure correct
+|	print("Y/N")
+|	input("").upper()
+|	if option = ("Y")
+|		continue
+|			
+|	if option = ("N")
+|		yengbp()         #allows user to re-enter their number
+|			
+|	else:
+|		print("Incorrect option. Please try again.")
+|		yengbp()
+|	print("Converting...")
+|	output = yentopound * 0.006603
+|	print("From ", yentopound, "JAPANESE YEN, you would get ", output, " POUNDS.")
+|	print("Returning to menu.")
+|		menu()
+
+
+def menu():
+
+print("Welcome to Currency Converter. Please select a currency to convert from below.")
+input("GBP-EUR - EUR-GBP - GBP-AUD - AUD-GBP - GBP-JPY - JPY-GBP")
+if option = gbp-eur:
+	gbpeur()
+if option = eur-gbp:
+	eurgbp()
+if option = gbp-aud:
+	gbpaud()
+if option = aud-gbp:
+	audgbp()
+if option = gbp-jpy:
+	gbpjpy()
+if option = jpy-gbp
+	jpygbp()
+
+
+
+menu()
+
+                                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                POUNDS-EUROS	EUROS-POUNDS	POUNDS-AUD	AUD-POUNDS	POUNDS-YEN	YEN-POUNDS
+16/03/2021	1.167962	0.856192	1.793263	0.557643	151.443794	0.006603
+
